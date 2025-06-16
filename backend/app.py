@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from program import Agent, GameState
 from game import PlayerColor, PlaceAction, Coord
+import os
 
 app = Flask(__name__)
 CORS(app)  # Allow React frontend to access backend
@@ -108,4 +109,5 @@ def is_adjacent_to_red(coord: Coord, board):
     return False
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5001)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(debug=False, host="0.0.0.0", port=port)
