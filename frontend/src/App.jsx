@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", color: "white", background: "#111", minHeight: "100vh" }}>
-      <h1>Tetress: Human vs Agent</h1>
+      <h1>Tetromino: Human vs Agent</h1>
       <div>
         <label>Iterations (1-20): </label>
         <select value={iterations} onChange={(e) => setIterations(Number(e.target.value))}>
