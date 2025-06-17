@@ -1,4 +1,4 @@
-# Tetromino
+# Tetrominos
 ## Human vs AI Tetris
 
 ### 📚 Table of Contents
