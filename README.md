@@ -21,7 +21,7 @@
 
 Tetromino is a two-player adverserial game that is a derivative of the wildly loved game, Tetris. 
 
-Players take turns placing tetris-like pieces on an 11x11 board. This project pits a human player against an AI agent powered by **Monte Carlo Tree Search (MCTS)**. The AI strategically evaluates possible placements by simulating future game states and selecting actions that yield the most promising outcomes based on statistical rollout results.
+Players take turns placing tetris-like pieces on an 11x11 toroidal board. This project pits a human player against an AI agent powered by **Monte Carlo Tree Search (MCTS)**. The AI strategically evaluates possible placements by simulating future game states and selecting actions that yield the most promising outcomes based on statistical rollout results.
 
 The project is composed of:
 - A Python backend using Flask that manages the game logic and serves API endpoints.
